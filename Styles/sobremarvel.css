@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Montserrat:ital,wght@0,600;1,200&family=Scada&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*Barra de navegacion*/
+
+
+
+.logo{
+    width: 5.5rem;
+    padding: 0.5rem 1rem;
+}
+
+header {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.navbarflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0F0E0E;
+    color: white;
+    width: 100%;
+
+
+}
+
+.navbarlinks ul {
+    display: flex;
+
+
+}
+
+.navbarlinks ul li {
+    list-style: none;
+
+}
+
+.navbarlinks ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 1.6rem 1.5rem;
+    display: block;
+    transition-duration: 0.8s;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+
+
+}
+
+.navbarlinks ul li a:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 0.8s;
+}
+
+#active{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+/*Titulo principal*/
+
+.titulos {
+
+    background-image: url(/img/stan.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#tituloppal {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+
+}
+
+.sub {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+}
+
+
+
+
+p {
+    font-family: 'Scada', sans-serif;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+
+.titulo2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.titulo2cont{
+background-color: #541212;
+padding: 3rem 0;
+width: 100%;
+}
+
+.titulo3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.titulo3cont{
+background-color: #541212;
+padding: 3rem 0;
+width: 100%;
+}
+
+
+/* Contenedor grid */
+
+
+.parent {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 0px;
+    padding: 2rem 0;
+
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.imgstan {
+    width: 100%;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.35);
+}
+
+
+/*Stan lee way*/
+.parrafostan{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+}
+
+#espaciomapa{
+    padding-bottom: 2rem;
+}
+
+
+/*Fondo footer*/
+.fondofooter {
+    background-color: #0F0E0E;
+    width: 100%;
+
+
+}
+
+.fondofooter p {
+    text-align: center;
+    padding: 1.5rem;
+    color: white
+}
+
+.iconoig{
+    color: white;
+    width: 1rem;
+    position: relative;
+    top: 0.2rem;
+}
+
+
+/*media queries*/
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+
+.navbarflex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navbarlinks ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 6rem;
+    padding: 0.5rem 0rem;
+}
+header{
+    position: relative;
+}
+
+}
+
+
+    
+
+
+
+@media screen and (max-width:767px) {
+
+    #tituloppal {
+        font-size: 2rem;
+    }
+
+    
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+
+        
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+
+.navbarflex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navbarlinks ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 6rem;
+    padding: 0.5rem 0rem;
+}
+header{
+    position: relative;
+}
+
+
+}
+

@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Montserrat:ital,wght@0,600;1,200&family=Scada&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/*Barra de navegacion*/
+
+
+
+.logo{
+    width: 5.5rem;
+    padding: 0.5rem 1rem;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+.navbarflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0F0E0E;
+    color: white;
+    width: 100%;
+
+    
+}
+
+.navbarlinks ul{
+    display: flex;
+    
+    
+}
+
+.navbarlinks ul li{
+    list-style: none;
+    
+}
+
+.navbarlinks ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 1.6rem 1.5rem;
+    display: block;
+    transition-duration: 0.8s;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+   
+    
+}
+
+.navbarlinks ul li a:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 0.8s;
+}
+
+#active{
+    color: black;
+    background-color: white;
+    
+}
+
+
+
+
+
+
+/*Imagen principal y titulos*/
+.ppal{
+    width: 100%;
+    
+}
+
+
+
+.titulos{
+    background-color: #541212;
+    padding: 2rem 0;
+    text-decoration: none;
+    
+    
+}
+
+.titulos2{
+    background-color: #541212;
+    padding: 2rem 0;
+    text-decoration: none;
+    transition: .5s;
+    
+    
+}
+
+.titulos2:hover{
+    background-color: black;
+    transition: .5s;
+    
+    
+    
+}
+#tituloppal{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.sub{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.sub2{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+}
+
+#lasfases{
+    text-decoration: none;
+}
+
+.volver{
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Definicion y fases*/
+
+.seccion1{
+    background-color: white;
+}
+
+.titulo3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.parrafo{
+    width: 80%;
+    margin: 0 auto;
+}
+
+p{
+    font-family: 'Scada', sans-serif;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.pseries{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.descripcion{
+    font-family: 'Scada', sans-serif;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.pfase{
+    text-align: center;
+    padding: 1rem 0rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+/*Grid de frases*/
+
+.imggrid1{
+    max-width: 100%;
+    height: auto;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+   
+    
+}
+
+.imggrid1:hover{
+
+  filter: grayscale(100%);
+  transition-duration: 0.5s;
+    
+}
+
+
+.grid-cont{
+    display: grid;
+width: 80%;
+margin: 0 auto;
+    padding-top: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.grid-cont div{
+    
+    text-align: center;
+}
+
+
+
+
+/*Fondo footer*/
+.fondofooter{
+    background-color: #0F0E0E;
+    width: 100%;
+   
+   
+}
+
+.fondofooter p{
+    text-align: center;
+    padding: 1.5rem;
+    color: white 
+}
+
+.iconoig{
+    color: white;
+    width: 1rem;
+    position: relative;
+    top: 0.2rem;
+}
+
+
+
+  
+
+  
+/*media queries*/
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+    .grid-cont{
+        
+        grid-template-columns:auto auto;
+        justify-content: space-between;
+    }
+
+    
+
+    .imggrid1{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .navbarflex{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbarlinks ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+        width: 6rem;
+        padding: 0.5rem 0rem;
+    }
+
+
+    header{
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width:767px){
+    .grid-cont{
+        grid-template-columns:auto;
+        justify-content: center;
+    }
+
+
+    #tituloppal{
+        font-size: 2rem;
+    }
+
+    .imggrid1{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .navbarflex{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbarlinks ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+        width: 6rem;
+        padding: 0.5rem 0rem;
+    }
+    
+    header{
+        position: relative;
+    }
+
+}
+
+
